@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atul Ambhore | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    nav {
+      background: #ffffffcc;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #0077cc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-group {
+      background-color: #f9fafc;
+      border-radius: 10px;
+      padding: 15px;
+    }
+
+    .skill-group h4 {
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: #0077cc;
+    }
+
+    .skill-group ul {
+      list-style: none;
+    }
+
+    .skill-group ul li {
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e0ecff;
+      color: #333;
+      padding: 12px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #d4e7ff;
+    }
+
+    /* Enlarged Contact Section */
+    #contact {
+      text-align: center;
+      padding: 60px 30px;
+      font-size: 1.1rem;
+    }
+
+    #contact h2 {
+      font-size: 2.2rem;
+      color: #0066cc;
+      margin-bottom: 25px;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .contact-buttons a {
+      font-size: 1.1rem;
+      padding: 14px 26px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f7f9fc;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      #contact h2 { font-size: 1.6rem; }
+      .contact-buttons a { font-size: 1rem; padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>👋 Hi, I'm Atul Ambhore</h1>
+      <p>Electronics & Computer Engineer | Data Analyst | Cybersecurity Enthusiast | Python Developer</p>
+      <a href="Atul_Ambhore_Resume.pdf" class="btn" download>📄 Download Resume</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="about" class="card fade-in">
+      <h2>About Me</h2>
+      <p>Hello! I’m <strong>Atul Ambhore</strong>, an enthusiastic and curious Electronics and Computer Engineering student. My passion lies in <strong>Data Science</strong>, <strong>Cybersecurity</strong>, and <strong>AI & Deep Learning</strong>.</p>
+    
+      <p>I love solving real-world problems using technology — whether it's building smart IoT systems, creating efficient backend logic, or analyzing data to make informed decisions. I’m continuously learning and exploring new tools and frameworks that enhance my technical skill set.</p>
+    
+      <p>Alongside tech, I believe in teamwork, discipline, and lifelong learning. I enjoy experimenting with new ideas, participating in projects, and collaborating with like-minded individuals. My goal is to contribute to innovative and impactful solutions.</p>
+    </section>
+    
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Programming</h4>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud</h4>
+          <ul>
+            <li>AWS Cloud</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Testing</h4>
+          <ul>
+            <li>Manual Testing</li>
+            <li>API Testing</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>BI & Data</h4>
+          <ul>
+            <li>Power BI</li>
+            <li>Advanced Excel</li>
+            <li>Tableau</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>🏠 Home Automation using IoT</li>
+        <li>📊 Financial Budget Tracker</li>
+        <li>🏥 Health Information Exchange System</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="card">
+      <h2>📄 My Resume</h2>
+      <p>You can view my resume below or open it in a new tab.</p>
+      <iframe src="Atul_Ambhore_Resume.pdf"></iframe>
+      <div style="margin-top: 1rem;">
+        <a href="Atul_Ambhore_Resume.pdf" target="_blank" class="btn">🔍 Open Fullscreen in New Tab</a>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Let's connect! 👇</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:atulambhore07@gmail.com">atulambhore07@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917387745848">+91 738 774 5848</a></p>
+      </div>
+      <div class="contact-buttons">
+        <a href="mailto:atulambhore07@gmail.com" class="btn">📧 Email Me</a>
+        <a href="tel:+917387745848" class="btn">📞 Call Me</a>
+        <a href="https://www.linkedin.com/in/atul-ambhore-71340a258/" target="_blank" class="btn">🔗 LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Atul Ambhore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
